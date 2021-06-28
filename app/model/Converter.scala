@@ -6,7 +6,7 @@ class Converter {
   lazy val rates = reader.read()
 
   def convert(amount: Double, currency: String): Double = {
-    amount*
+    amount/
       (currency match {
       case "USD" =>
         rates._1
