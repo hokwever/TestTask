@@ -19,7 +19,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
   def convert(amount: Double, currency: String) = Action { implicit request: Request[AnyContent] =>
     val converter = new Converter()
     val res = converter.convert(amount, currency)
-    Ok(s"$res")
+    Ok(s"{ \"result\":$res }")
   }
   
 }

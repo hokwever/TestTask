@@ -14,7 +14,8 @@ class Converter {
         rates._2
       case "JPY" =>
         rates._3
-
+      case "UAH" =>
+        rates._4
       })
   }
 

@@ -18,4 +18,9 @@ class ReaderSpec extends FlatSpec {
     val r = new Reader()
     assertResult(3)(r.read("JPY"))
   }
+
+  "Converter" should "get more than 0" in {
+    val c = new Converter()
+    c.convert(1,"UAH")
+  }
 }
